@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<script type="text/javascript">
+		var pageWindth = window.innerWidth,
+				pageHeight = window.innerHeight;
+		if (typeof pageWindth != "number"){
+			if (document.compatMode == "CSS1Compat"){
+				pageWindth = document.documentElement.clientWidth;
+				pageHeight = document.documentElement.clientHeight;
+			} else {
+				pageWindth = document.body.clientWidth;
+				pageHeight = document.body.clientHeight;
+			}
+		}
+</script>
+<body>
+
+</body>
+</html>
